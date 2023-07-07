@@ -13,7 +13,7 @@ jobs:
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.7]
+        python-version: [3.4]
 
     steps:
     - uses: actions/checkout@v3
@@ -29,4 +29,4 @@ jobs:
       run: |
         ls
         pwd     
-        nohup python manage.py runserver --noreload
+        python manage.py runserver --noreload
