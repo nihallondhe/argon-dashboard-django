@@ -25,5 +25,6 @@ jobs:
       
     - name: Run Tests
       run: |
+         sudo kill -9 $(sudo lsof -t -i:8000)
          sudo docker build -t new_update .
          sudo docker run -itd -p 8000:5005 new_update
