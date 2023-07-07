@@ -26,4 +26,4 @@ jobs:
     - name: Run Tests
       run: |
          sudo docker build -t new_update .
-         sudo docker run -itd -p 8000:8000 new_update
+         sudo docker run -itd -p 8000:5005 new_update
