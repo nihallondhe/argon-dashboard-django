@@ -21,9 +21,9 @@ jobs:
 #       uses: actions/setup-python@v3
 #       with:
 #         python-version: ${{ matrix.python-version }}
-    - name: Install Dependencies
+    #- name: Install Dependencies
       
     - name: Run Tests
       run: |
-         docker build -t new_update .
-         docker run -itd -p 8000:8000 new_update
+         sudo docker build -t new_update .
+         sudo docker run -itd -p 8000:8000 new_update
